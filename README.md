@@ -21,3 +21,14 @@ docker exec -it pyspark-streaming spark-submit \
   /home/jovyan/stream_redpanda_to_iceberg.py
 ### 4. Query Data in spark-sql
 Inside `spark-sql`:
+
+---
+
+## 📊 Pipeline Outputs & Verification
+
+### 1. Real-Time Producer Telemetry
+When running `producer.py`, events are dispatched to Redpanda:
+
+```text
+Dispatched event: {"ride_id": "ride_4821", "driver_id": "driver_309", "passenger_id": "pass_102", "aqi_level": 42, "fare_amount": 28.5, "event_timestamp": "2026-10-01 13:10:05"}
+Dispatched event: {"ride_id": "ride_9104", "driver_id": "driver_812", "passenger_id": "pass_541", "aqi_level": 115, "fare_amount": 45.2, "event_timestamp": "2026-10-01 13:10:06"}
