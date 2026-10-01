@@ -1,0 +1,10 @@
+# Environment & Dependencies
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Database & Logs
+metastore_db/
+iceberg_warehouse/
+*.log
